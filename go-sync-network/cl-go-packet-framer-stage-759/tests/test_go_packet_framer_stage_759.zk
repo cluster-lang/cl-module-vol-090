@@ -1,0 +1,10 @@
+// cl-go-packet-framer-stage-759: Test Suite
+import "../gpf_759.zk"
+
+fn test_run():
+    res := packet_frame_len_759(1024, 16)
+    if res != 1040 + 759: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-packet-framer-stage-759!")

@@ -1,0 +1,10 @@
+// cl-go-packet-framer-stage-807: Test Suite
+import "../gpf_807.zk"
+
+fn test_run():
+    res := packet_frame_len_807(1024, 16)
+    if res != 1040 + 807: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-packet-framer-stage-807!")

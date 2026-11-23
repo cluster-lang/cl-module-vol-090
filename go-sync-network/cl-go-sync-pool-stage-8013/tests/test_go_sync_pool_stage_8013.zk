@@ -1,0 +1,10 @@
+// cl-go-sync-pool-stage-8013: Test Suite
+import "../gsp_8013.zk"
+
+fn test_run():
+    res := pool_slot_index_8013(2, 16)
+    if res != (26 + 8013) % 16: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-sync-pool-stage-8013!")

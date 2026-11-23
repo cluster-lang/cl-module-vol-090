@@ -1,0 +1,10 @@
+// cl-go-packet-framer-stage-279: Test Suite
+import "../gpf_279.zk"
+
+fn test_run():
+    res := packet_frame_len_279(1024, 16)
+    if res != 1040 + 279: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-packet-framer-stage-279!")

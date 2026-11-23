@@ -1,0 +1,10 @@
+// cl-go-sync-pool-stage-8238: Test Suite
+import "../gsp_8238.zk"
+
+fn test_run():
+    res := pool_slot_index_8238(2, 16)
+    if res != (26 + 8238) % 16: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-sync-pool-stage-8238!")

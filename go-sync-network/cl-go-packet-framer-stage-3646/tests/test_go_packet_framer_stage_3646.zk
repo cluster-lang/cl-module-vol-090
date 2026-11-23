@@ -1,0 +1,10 @@
+// cl-go-packet-framer-stage-3646: Test Suite
+import "../gpf_3646.zk"
+
+fn test_run():
+    res := packet_frame_len_3646(1024, 16)
+    if res != 1040 + 3646: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-packet-framer-stage-3646!")

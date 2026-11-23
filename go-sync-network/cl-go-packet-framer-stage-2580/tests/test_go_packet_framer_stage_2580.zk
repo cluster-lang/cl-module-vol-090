@@ -1,0 +1,10 @@
+// cl-go-packet-framer-stage-2580: Test Suite
+import "../gpf_2580.zk"
+
+fn test_run():
+    res := packet_frame_len_2580(1024, 16)
+    if res != 1040 + 2580: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-packet-framer-stage-2580!")

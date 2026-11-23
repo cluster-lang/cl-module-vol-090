@@ -1,0 +1,10 @@
+// cl-go-packet-framer-stage-588: Test Suite
+import "../gpf_588.zk"
+
+fn test_run():
+    res := packet_frame_len_588(1024, 16)
+    if res != 1040 + 588: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-packet-framer-stage-588!")

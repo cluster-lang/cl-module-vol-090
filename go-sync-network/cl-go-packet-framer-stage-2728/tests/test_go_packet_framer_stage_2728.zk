@@ -1,0 +1,10 @@
+// cl-go-packet-framer-stage-2728: Test Suite
+import "../gpf_2728.zk"
+
+fn test_run():
+    res := packet_frame_len_2728(1024, 16)
+    if res != 1040 + 2728: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-packet-framer-stage-2728!")

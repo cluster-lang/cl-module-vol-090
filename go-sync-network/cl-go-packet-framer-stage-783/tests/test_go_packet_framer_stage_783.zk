@@ -1,0 +1,10 @@
+// cl-go-packet-framer-stage-783: Test Suite
+import "../gpf_783.zk"
+
+fn test_run():
+    res := packet_frame_len_783(1024, 16)
+    if res != 1040 + 783: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-packet-framer-stage-783!")

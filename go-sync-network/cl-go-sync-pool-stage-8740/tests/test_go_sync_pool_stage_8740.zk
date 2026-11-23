@@ -1,0 +1,10 @@
+// cl-go-sync-pool-stage-8740: Test Suite
+import "../gsp_8740.zk"
+
+fn test_run():
+    res := pool_slot_index_8740(2, 16)
+    if res != (26 + 8740) % 16: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-sync-pool-stage-8740!")

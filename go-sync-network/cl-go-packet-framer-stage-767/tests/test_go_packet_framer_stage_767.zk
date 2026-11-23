@@ -1,0 +1,10 @@
+// cl-go-packet-framer-stage-767: Test Suite
+import "../gpf_767.zk"
+
+fn test_run():
+    res := packet_frame_len_767(1024, 16)
+    if res != 1040 + 767: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-go-packet-framer-stage-767!")

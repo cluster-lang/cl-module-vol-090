@@ -1,0 +1,6 @@
+// cl-go-packet-framer-stage-3962
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn packet_frame_len_3962(payload_len: int, header_len: int) -> int:
+    return payload_len + header_len + 3962
